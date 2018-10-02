@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; font-src 'self' data:;">
     <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|
     Source+Sans+Pro:400,700,900" rel="stylesheet">
@@ -64,7 +65,8 @@
                         REEN website template. Customize your site
                         with versatile and easy to use features.
                     </p>
-                    <button class="btn btn-default banner-btn">
+                    <button class="btn btn-default banner-btn"
+                            data-toggle="modal" data-target="#myModal">
                         GET STARTED NOW
                     </button>
                 </div>
@@ -543,6 +545,6 @@
         </section>
     </div>
 </section>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/bootstrap.js"></script>
 </body>
